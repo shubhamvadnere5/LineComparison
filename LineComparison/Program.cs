@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Line_Comparision
 {
+    /// <summary>
+    /// UC3 line Status
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -36,14 +39,18 @@ namespace Line_Comparision
             float q = b2 - b1;
             float r = p * p + q * q;
             Console.WriteLine("The length of a second line is :");
-            Console.WriteLine(System.Math.Sqrt(r)); //The Math.Sqrt() method in C# is used to compute the square root of the specified number. 
+            Console.WriteLine(System.Math.Sqrt(r));
             if (x == r)
             {
-                Console.WriteLine("Both the lines are equal");
+                Console.WriteLine("Length of Both the lines are equal");
+            }
+            else if (x > r)
+            {
+                Console.WriteLine("Length of Line 1 is Greater than Line 2");
             }
             else
             {
-                Console.WriteLine("Both the lines are not equal");
+                Console.WriteLine("Length of Line 1 is Smaller than Line 2");
             }
             Console.ReadLine();
         }
