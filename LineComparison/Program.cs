@@ -36,7 +36,7 @@ namespace Line_Comparision
             float q = b2 - b1;
             float r = p * p + q * q;
             Console.WriteLine("The length of a second line is :");
-            Console.WriteLine(System.Math.Sqrt(r));
+            Console.WriteLine(System.Math.Sqrt(r)); //The Math.Sqrt() method in C# is used to compute the square root of the specified number. 
             if (x == r)
             {
                 Console.WriteLine("Both the lines are equal");
